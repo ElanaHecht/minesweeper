@@ -3,53 +3,114 @@ body {
    text-align: center;
 }
 
-h1 {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin-top: 150px;
+.background {
+   background: url('img/mine_explode.jpg');
+   background-color: rgb(201, 200, 200);
+   background-size: 100% 100%;
 }
 
-/* .box {
+h1 {
+   font-family: Impact;
+   font-weight: 300;
+   font-size: 60px;
+}
+
+.box {
    position: absolute;
-   margin-left: 350px;
    margin-top: 20px;
    height: 450px;
    width: 450px;
-   background-color: gray;
-} */
+   top: 50%;
+   left: 50%;
+   background-color: white;
+}
 
 button {
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+   background-color: rgb(255, 145, 0);
+   color: rgb(36, 36, 36);
+   border: transparent;
+}
+
+button:hover {
+   background-color: rgb(255, 170, 11)
+}
+
+.restart {
    height: 50px;
    width: 50px;
    cursor: pointer;
+   background-color: rgb(255, 145, 0);
+   color: rgb(36, 36, 36);
+   border: transparent;
+   background-color: rgb(36, 36, 36);
+   border-radius: 5px;
+   font-size: 24px;
+   margin-bottom: 15px;
 }
 
-table, th, td {
-   margin-left: 450px;
-   background-color: rgb(201, 200, 200);
-}
 
 table {
-   position: absolute;
+   margin: auto;
    background-color: rgb(201, 200, 200);
    border-spacing: 2px;
 }
 
 .cell {
-   height: 50px;
-   width: 50px;
-   border: 1px solid rgb(4, 4, 4);
+   height: 45px;
+   width: 40px;
+   background-color: rgb(36, 36, 36);
    border-radius: 5px;
    cursor: pointer;
 }
 
-.mine {
-   background-color: red;
+.shown {
+   font-family: impact;
+   font-size: 24px;
+   background-color: rgb(255, 145, 0);
+   color: rgb(36, 36, 36)
 }
 
-.neg {
-   background-color: blue;
+.timer {
+   display: inline-block;
+   color: black;
+   font-family: Impact;
+   font-size: 30px;
+   margin-right: 25px;
 }
 
-.empty {
-   background-color: yellow
+.mines-left {
+   display: inline-block;
+   color: black;
+   font-family: Impact;
+   font-size: 30px;
+   margin-left: 25px;
+}
+
+.lives {
+   display: inline-block;
+   font-size: 26px;
+   margin-right: 10px;
+}
+
+.levels button {
+   height: 40px;
+   width: 150px;
+   color: rgb(4, 4, 4);
+   border-radius: 5px;
+   font-family: impact;
+   font-weight: 200;
+   font-size: 20px;
+   margin-left: 25px;
+   margin-bottom: 25px;
+}
+
+.hints {
+   display: inline-block;
+   font-size: 30px;
+   margin-left: 10px;
+   cursor: pointer;
 }
