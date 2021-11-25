@@ -32,7 +32,7 @@ function init() {
    elBtn.innerText = SMILE;
    gFirstClick = null;
    createBoard();
-   gGame.isOn = true;
+   gGame.isOn = false;
    gGame.livesLeft = 3;
    gGame.shownCount = 0;
    gGame.markedCount = 0,
@@ -107,7 +107,7 @@ function renderTime() {
 
 function renderMinesLeft() {
    var elMinesLeft = document.querySelector('.mines-left');
-   elMinesLeft.innerText = 'Mines left: ' + gLevel.MINES - gGame.markedCount;
+   elMinesLeft.innerText = gLevel.MINES - gGame.markedCount;
 }
 
 function renderCell(cellI, cellJ) {
@@ -191,6 +191,7 @@ function onHints() {
 
 function cellClicked(cellI, cellJ) {
    if (gFirstClick === null) {
+      gGame.isOn = true;
       gFirstClick = [cellI, cellJ];
       gGame.timeStart = new Date().getTime();
       setRandomMineCells();

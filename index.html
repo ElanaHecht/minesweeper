@@ -8,23 +8,22 @@
     <title>Minesweeper</title>
   </head>
   <body>
-    <img class="background" />
-    <h1>MineSweeper</h1>
-    <!-- <div class="box"></div> -->
-    <div class="levels">
-      <button onclick="setLevel(this)">Beginner</button>
-      <button onclick="setLevel(this)">Intermediate</button>
-      <button onclick="setLevel(this)">Expert</button>
+    <div class="box">
+      <h1>MineSweeper</h1>
+      <div class="levels">
+        <button onclick="setLevel(this)">Beginner</button>
+        <button onclick="setLevel(this)">Intermediate</button>
+        <button onclick="setLevel(this)">Expert</button>
+      </div>
+      <div class="timer"></div>
+      <div class="lives"></div>
+      <button class="restart" onclick="init()"></button>
+      <div class="hints" onclick="onHints()"></div>
+      <div class="mines-left"></div>
+      <table class="board">
+        <tbody class="board-cells"></tbody>
+      </table>
     </div>
-    <div class="lives"></div>
-    <div><span class="hints" onclick="onHints()"></span></div>
-    <button class="restart" onclick="init()"></button>
-    <div class="mines-left"></div>
-    <div class="timer"></div>
-    <table class="board">
-      <tbody class="board-cells"></tbody>
-    </table>
-
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
   </body>

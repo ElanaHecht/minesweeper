@@ -1,28 +1,20 @@
 body {
-   background-color: rgb(201, 200, 200);
    text-align: center;
-}
-
-.background {
-   background: url('img/mine_explode.jpg');
-   background-color: rgb(201, 200, 200);
-   background-size: 100% 100%;
+   background-color: black;
 }
 
 h1 {
+   background-color: rgb(255, 145, 0);
    font-family: Impact;
    font-weight: 300;
    font-size: 60px;
 }
 
 .box {
-   position: absolute;
-   margin-top: 20px;
-   height: 450px;
-   width: 450px;
-   top: 50%;
-   left: 50%;
-   background-color: white;
+   background-color: black;
+   width: auto;
+   margin: 0px auto;
+   padding: 0px 25px 25px 25px;
 }
 
 button {
@@ -31,7 +23,7 @@ button {
    width: 30px;
    cursor: pointer;
    background-color: rgb(255, 145, 0);
-   color: rgb(36, 36, 36);
+   color: rgb(21, 21, 21);
    border: transparent;
 }
 
@@ -44,9 +36,9 @@ button:hover {
    width: 50px;
    cursor: pointer;
    background-color: rgb(255, 145, 0);
-   color: rgb(36, 36, 36);
+   color: rgb(75, 74, 74);
    border: transparent;
-   background-color: rgb(36, 36, 36);
+   background-color: rgb(87, 86, 86);
    border-radius: 5px;
    font-size: 24px;
    margin-bottom: 15px;
@@ -55,7 +47,7 @@ button:hover {
 
 table {
    margin: auto;
-   background-color: rgb(201, 200, 200);
+   background-color: rgb(255, 145, 0);
    border-spacing: 2px;
 }
 
@@ -76,7 +68,7 @@ table {
 
 .timer {
    display: inline-block;
-   color: black;
+   color: white;
    font-family: Impact;
    font-size: 30px;
    margin-right: 25px;
@@ -84,7 +76,7 @@ table {
 
 .mines-left {
    display: inline-block;
-   color: black;
+   color: white;
    font-family: Impact;
    font-size: 30px;
    margin-left: 25px;
