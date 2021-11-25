@@ -8,11 +8,19 @@
     <title>Minesweeper</title>
   </head>
   <body>
+    <img class="background" />
     <h1>MineSweeper</h1>
     <!-- <div class="box"></div> -->
+    <div class="levels">
+      <button onclick="setLevel(this)">Beginner</button>
+      <button onclick="setLevel(this)">Intermediate</button>
+      <button onclick="setLevel(this)">Expert</button>
+    </div>
+    <div class="lives"></div>
+    <div><span class="hints" onclick="onHints()"></span></div>
+    <button class="restart" onclick="init()"></button>
+    <div class="mines-left"></div>
     <div class="timer"></div>
-    <button class="restart"></button>
-    <div class="bombs-left"></div>
     <table class="board">
       <tbody class="board-cells"></tbody>
     </table>
